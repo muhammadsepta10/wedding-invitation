@@ -1,0 +1,55 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Guest {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  phone     String?
+  email     String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  rsvps     Rsvp[]
+  messages  Message[]
+}
+
+model Rsvp {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  guestId    String   @db.ObjectId
+  guest      Guest    @relation(fields: [guestId], references: [id], onDelete: Cascade)
+  attendance String   // "hadir", "tidak_hadir", "belum_pasti"
+  guestCount Int      @default(1)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([guestId])
+}
+
+model Message {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  guestId   String   @db.ObjectId
+  guest     Guest    @relation(fields: [guestId], references: [id], onDelete: Cascade)
+  name      String
+  message   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([guestId])
+}
+
+model Config {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  key       String   @unique
+  value     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+

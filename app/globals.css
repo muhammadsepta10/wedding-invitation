@@ -1,0 +1,938 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-bodoni {
+    font-family: var(--font-bodoni);
+  }
+}
+
+@layer utilities {
+  /* Dynamic Font Classes */
+  .font-sans-serif {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  .font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+  
+  .font-mono {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+  
+  .font-inter {
+    font-family: var(--font-inter), "Inter", sans-serif;
+  }
+  
+  .font-dancing-script {
+    font-family: var(--font-dancing-script), "Dancing Script", cursive;
+  }
+  
+  .font-bodoni-moda {
+    font-family: "Bodoni Moda", serif;
+  }
+  
+  .font-playfair {
+    font-family: "Playfair Display", serif;
+  }
+  
+  .font-great-vibes {
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .font-pacifico {
+    font-family: "Pacifico", cursive;
+  }
+  
+  .font-satisfy {
+    font-family: "Satisfy", cursive;
+  }
+  
+  .font-lora {
+    font-family: "Lora", serif;
+  }
+  
+  .font-crimson-text {
+    font-family: "Crimson Text", serif;
+  }
+  
+  .font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .font-open-sans {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .font-lato {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .font-raleway {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .font-nunito {
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .font-ubuntu {
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .font-oswald {
+    font-family: "Oswald", sans-serif;
+  }
+  
+  .font-pt-sans {
+    font-family: "PT Sans", sans-serif;
+  }
+  
+  .font-roboto-slab {
+    font-family: "Roboto Slab", serif;
+  }
+  
+  .font-libre-baskerville {
+    font-family: "Libre Baskerville", serif;
+  }
+  
+  .font-merriweather {
+    font-family: "Merriweather", serif;
+  }
+  
+  .font-pt-serif {
+    font-family: "PT Serif", serif;
+  }
+  
+  .font-crimson-pro {
+    font-family: "Crimson Pro", serif;
+  }
+  
+  .font-spectral {
+    font-family: "Spectral", serif;
+  }
+  
+  .font-eb-garamond {
+    font-family: "EB Garamond", serif;
+  }
+  
+  .font-libre-caslon {
+    font-family: "Libre Caslon Text", serif;
+  }
+  
+  .font-cormorant {
+    font-family: "Cormorant", serif;
+  }
+  
+  .font-cinzel {
+    font-family: "Cinzel", serif;
+  }
+  
+  .font-alex-brush {
+    font-family: "Alex Brush", cursive;
+  }
+  
+  .font-allura {
+    font-family: "Allura", cursive;
+  }
+  
+  .font-amatic {
+    font-family: "Amatic SC", cursive;
+  }
+  
+  .font-bad-script {
+    font-family: "Bad Script", cursive;
+  }
+  
+  .font-bilbo {
+    font-family: "Bilbo", cursive;
+  }
+  
+  .font-bilbo-swash {
+    font-family: "Bilbo Swash Caps", cursive;
+  }
+  
+  .font-caveat {
+    font-family: "Caveat", cursive;
+  }
+  
+  .font-comforter {
+    font-family: "Comforter", cursive;
+  }
+  
+  .font-courgette {
+    font-family: "Courgette", cursive;
+  }
+  
+  .font-damion {
+    font-family: "Damion", cursive;
+  }
+  
+  .font-dancing-script-bold {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+  }
+  
+  .font-kaushan-script {
+    font-family: "Kaushan Script", cursive;
+  }
+  
+  .font-lobster {
+    font-family: "Lobster", cursive;
+  }
+  
+  .font-lobster-two {
+    font-family: "Lobster Two", cursive;
+  }
+  
+  .font-orange-juice {
+    font-family: "Orange Juice", cursive;
+  }
+  
+  .font-quicksand {
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .font-raleway-thin {
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+  }
+  
+  .font-raleway-light {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+  }
+  
+  .font-raleway-regular {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+  }
+  
+  .font-raleway-medium {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+  }
+  
+  .font-raleway-semibold {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+  }
+  
+  .font-raleway-bold {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+  
+  .font-raleway-extrabold {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+  }
+  
+  .font-raleway-black {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+  }
+  
+  /* Font Weight Classes */
+  .font-weight-100 {
+    font-weight: 100;
+  }
+  
+  .font-weight-200 {
+    font-weight: 200;
+  }
+  
+  .font-weight-300 {
+    font-weight: 300;
+  }
+  
+  .font-weight-400 {
+    font-weight: 400;
+  }
+  
+  .font-weight-500 {
+    font-weight: 500;
+  }
+  
+  .font-weight-600 {
+    font-weight: 600;
+  }
+  
+  .font-weight-700 {
+    font-weight: 700;
+  }
+  
+  .font-weight-800 {
+    font-weight: 800;
+  }
+  
+  .font-weight-900 {
+    font-weight: 900;
+  }
+  
+  /* Font Weight Aliases */
+  .font-weight-thin {
+    font-weight: 100;
+  }
+  
+  .font-weight-extralight {
+    font-weight: 200;
+  }
+  
+  .font-weight-light {
+    font-weight: 300;
+  }
+  
+  .font-weight-normal {
+    font-weight: 400;
+  }
+  
+  .font-weight-regular {
+    font-weight: 400;
+  }
+  
+  .font-weight-medium {
+    font-weight: 500;
+  }
+  
+  .font-weight-semibold {
+    font-weight: 600;
+  }
+  
+  .font-weight-bold {
+    font-weight: 700;
+  }
+  
+  .font-weight-extrabold {
+    font-weight: 800;
+  }
+  
+  .font-weight-black {
+    font-weight: 900;
+  }
+  
+  /* Text Transform Classes */
+  .text-transform-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-transform-lowercase {
+    text-transform: lowercase;
+  }
+  
+  .text-transform-capitalize {
+    text-transform: capitalize;
+  }
+  
+  .text-transform-none {
+    text-transform: none;
+  }
+  
+  /* Letter Spacing Classes */
+  .letter-spacing-tighter {
+    letter-spacing: -0.05em;
+  }
+  
+  .letter-spacing-tight {
+    letter-spacing: -0.025em;
+  }
+  
+  .letter-spacing-normal {
+    letter-spacing: 0em;
+  }
+  
+  .letter-spacing-wide {
+    letter-spacing: 0.025em;
+  }
+  
+  .letter-spacing-wider {
+    letter-spacing: 0.05em;
+  }
+  
+  .letter-spacing-widest {
+    letter-spacing: 0.1em;
+  }
+  
+  /* Line Height Classes */
+  .line-height-none {
+    line-height: 1;
+  }
+  
+  .line-height-tight {
+    line-height: 1.25;
+  }
+  
+  .line-height-snug {
+    line-height: 1.375;
+  }
+  
+  .line-height-normal {
+    line-height: 1.5;
+  }
+  
+  .line-height-relaxed {
+    line-height: 1.625;
+  }
+  
+  .line-height-loose {
+    line-height: 2;
+  }
+  
+  /* Font Style Classes */
+  .font-style-italic {
+    font-style: italic;
+  }
+  
+  .font-style-normal {
+    font-style: normal;
+  }
+  
+  .font-style-oblique {
+    font-style: oblique;
+  }
+  
+  /* Text Decoration Classes */
+  .text-decoration-underline {
+    text-decoration: underline;
+  }
+  
+  .text-decoration-overline {
+    text-decoration: overline;
+  }
+  
+  .text-decoration-line-through {
+    text-decoration: line-through;
+  }
+  
+  .text-decoration-none {
+    text-decoration: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #1e3a8a;
+  --secondary-color: #3b82f6;
+  --accent-color: #f59e0b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  position: relative;
+  background-image: url('/image/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 0;
+}
+
+/* Decorative elements now using actual images from /image folder */
+/* Removed old emoji-based flower decorations */
+
+/* Complex intertwined monogram matching icon.png style */
+.monogram-calligraphy {
+  position: relative;
+  display: inline-block;
+  letter-spacing: -1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: var(--font-great-vibes), "Great Vibes", cursive;
+  line-height: 1;
+}
+
+.monogram-calligraphy .letter-s {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  transform: translateY(-0.08em) rotate(-1deg);
+  /* Glow effect matching icon.png */
+  filter: drop-shadow(0 0 2px rgba(170, 170, 170, 0.8)) 
+          drop-shadow(0 0 4px rgba(170, 170, 170, 0.6)) 
+          drop-shadow(0 0 6px rgba(170, 170, 170, 0.4));
+}
+
+.monogram-calligraphy .letter-d {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  margin-left: -1.3rem;
+  transform: translateY(0.05em) rotate(0.5deg);
+  /* Glow effect matching icon.png */
+  filter: drop-shadow(0 0 2px rgba(170, 170, 170, 0.8)) 
+          drop-shadow(0 0 4px rgba(170, 170, 170, 0.6)) 
+          drop-shadow(0 0 6px rgba(170, 170, 170, 0.4));
+}
+
+/* Complex layering to match icon.png: Top S over D, Middle D over S, Bottom S over D */
+/* S - top part visible over D */
+.monogram-calligraphy .letter-s {
+  position: relative;
+  /* Show only top 45% of S over D */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 45%);
+}
+
+/* S - bottom part visible over D (using ::after) */
+.monogram-calligraphy .letter-s::after {
+  content: 'S';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Show only bottom 55% of S over D */
+  clip-path: polygon(0% 55%, 100% 55%, 100% 100%, 0% 100%);
+  z-index: 3;
+  filter: drop-shadow(0 0 2px rgba(170, 170, 170, 0.8)) 
+          drop-shadow(0 0 4px rgba(170, 170, 170, 0.6)) 
+          drop-shadow(0 0 6px rgba(170, 170, 170, 0.4));
+}
+
+/* D - middle part visible over S */
+.monogram-calligraphy .letter-d {
+  position: relative;
+  /* Show only middle 30% of D (40%-70%) over S */
+  clip-path: polygon(0% 40%, 100% 40%, 100% 70%, 0% 70%);
+  z-index: 2;
+}
+
+/* D - top and bottom parts behind S (using ::before) */
+.monogram-calligraphy .letter-d::before {
+  content: 'D';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Show top 40% and bottom 30% of D behind S */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 0% 40%, 0% 70%, 100% 70%, 100% 100%, 0% 100%);
+  z-index: 1;
+  filter: drop-shadow(0 0 2px rgba(170, 170, 170, 0.8)) 
+          drop-shadow(0 0 4px rgba(170, 170, 170, 0.6)) 
+          drop-shadow(0 0 6px rgba(170, 170, 170, 0.4));
+}
+
+/* Default colors for light backgrounds */
+.monogram-calligraphy .letter-s:not(.text-white) {
+  color: var(--primary-color);
+}
+
+.monogram-calligraphy .letter-d:not(.text-white):not(.text-amber-300):not(.text-white\/90) {
+  color: var(--accent-color);
+}
+
+/* Special styling for white text sections */
+.monogram-calligraphy .letter-s.text-white {
+  color: white;
+}
+
+.monogram-calligraphy .letter-d.text-amber-300 {
+  color: #fbbf24;
+}
+
+.monogram-calligraphy .letter-d.text-white\/90 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Ensure pseudo-elements inherit the right color */
+.monogram-calligraphy .letter-s.text-white::after,
+.monogram-calligraphy .letter-d.text-amber-300::before,
+.monogram-calligraphy .letter-d.text-white\/90::before {
+  color: inherit;
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+/* Sakura petals falling animation */
+.sakura-petals {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ffb6c1;
+  border-radius: 50% 0 50% 0;
+  opacity: 0;
+  animation: fall linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.petal-1 {
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 8s;
+}
+
+.petal-2 {
+  left: 20%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+}
+
+.petal-3 {
+  left: 30%;
+  animation-delay: 2s;
+  animation-duration: 7s;
+}
+
+.petal-4 {
+  left: 40%;
+  animation-delay: 3s;
+  animation-duration: 9s;
+}
+
+.petal-5 {
+  left: 50%;
+  animation-delay: 4s;
+  animation-duration: 6s;
+}
+
+.petal-6 {
+  left: 60%;
+  animation-delay: 5s;
+  animation-duration: 11s;
+}
+
+.petal-7 {
+  left: 70%;
+  animation-delay: 6s;
+  animation-duration: 8s;
+}
+
+.petal-8 {
+  left: 80%;
+  animation-delay: 7s;
+  animation-duration: 9s;
+}
+
+.petal-9 {
+  left: 90%;
+  animation-delay: 8s;
+  animation-duration: 7s;
+}
+
+.petal-10 {
+  left: 95%;
+  animation-delay: 9s;
+  animation-duration: 10s;
+}
+
+.petal-11 {
+  left: 5%;
+  animation-delay: 10s;
+  animation-duration: 8s;
+}
+
+.petal-12 {
+  left: 15%;
+  animation-delay: 11s;
+  animation-duration: 12s;
+}
+
+.petal-13 {
+  left: 25%;
+  animation-delay: 12s;
+  animation-duration: 9s;
+}
+
+.petal-14 {
+  left: 35%;
+  animation-delay: 13s;
+  animation-duration: 7s;
+}
+
+.petal-15 {
+  left: 45%;
+  animation-delay: 14s;
+  animation-duration: 11s;
+}
+
+.petal-16 {
+  left: 55%;
+  animation-delay: 15s;
+  animation-duration: 6s;
+}
+
+.petal-17 {
+  left: 65%;
+  animation-delay: 16s;
+  animation-duration: 10s;
+}
+
+.petal-18 {
+  left: 75%;
+  animation-delay: 17s;
+  animation-duration: 8s;
+}
+
+.petal-19 {
+  left: 85%;
+  animation-delay: 18s;
+  animation-duration: 9s;
+}
+
+.petal-20 {
+  left: 98%;
+  animation-delay: 19s;
+  animation-duration: 13s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.7;
+  }
+  95% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Additional sakura petal variations */
+.petal:nth-child(odd) {
+  background: #ffc0cb;
+  transform: scale(0.8);
+}
+
+.petal:nth-child(3n) {
+  background: #ffb3ba;
+  transform: scale(1.2);
+}
+
+.petal:nth-child(5n) {
+  background: #ffcccb;
+  transform: scale(0.9);
+}
+
+.petal:nth-child(7n) {
+  background: #ffb6c1;
+  transform: scale(1.1);
+}
+
+.petal:nth-child(11n) {
+  background: #ffa0b4;
+  transform: scale(0.7);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, rgba(240, 249, 255, 0.95) 0%, rgba(224, 242, 254, 0.95) 100%);
+}
+
+.bg-gradient-light::before {
+  background: rgba(240, 249, 255, 0.3);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #d97706;
+  transform: scale(1.05);
+}
+
+/* Countdown styles */
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.countdown-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.countdown-label {
+  font-size: 1rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Music player */
+.music-player {
+  position: fixed;
+  right: 2rem;
+  z-index: 1000;
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  /* Mobile: Di atas navigation bar yang ada di bottom */
+  bottom: 5.5rem; /* 88px - tepat di atas nav bar mobile */
+}
+
+.music-player:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.music-player.playing {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.6);
+  }
+}
+
+/* Desktop: Di atas navigation bar yang ada di top */
+@media (min-width: 768px) {
+  .music-player {
+    top: 5.5rem; /* 88px - tepat di atas nav bar desktop */
+    bottom: auto;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .countdown-value {
+    font-size: 2rem;
+  }
+
+  .flower-decoration {
+    width: 80px;
+    height: 80px;
+  }
+}
+
